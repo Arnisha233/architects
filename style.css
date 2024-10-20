@@ -10,9 +10,13 @@
 
 /* shared style start */
 .content-width {
-  max-width: 70%;
+  max-width: 1440px;
   margin: 0 auto;
 }
+/* .content-width {
+  max-width: 70%;
+  margin: 0 auto;
+} */
 .same-btn {
   width: 180px;
   height: 64px;
@@ -110,6 +114,8 @@ header {
   margin-top: 24px;
 }
 .banner-img {
+  width: 80%;
+  margin: 0 auto;
   padding: 50px 0 40px 0;
 }
 .banner-img img {
@@ -124,6 +130,8 @@ header {
   margin-top: 80px;
 }
 .features-container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -183,6 +191,8 @@ header {
   margin-top: 100px;
 }
 .experience-container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -266,7 +276,10 @@ header {
 /* facts section section start */
 .facts {
   margin-top: 100px;
-  margin-bottom: 100px;
+}
+.facts-container {
+  width: 80%;
+  margin: 0 auto;
 }
 .facts-title {
   color: var(--Dark-01, #131313);
@@ -303,6 +316,43 @@ header {
   margin-top: 5px;
 }
 /* facts section section end */
+
+/* sponsors section start */
+.sponsors {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.sponsors-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.sponsors-title {
+  color: var(--Dark-01, #131313);
+  font-family: "Work Sans";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.sponsors-description {
+  color: var(--Dark-03, #727272);
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 542px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.sponsors-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+/* sponsors section end */
 
 /* responsive start */
 @media only screen and (max-width: 500px) {
@@ -425,5 +475,21 @@ header {
     margin-bottom: 25px;
   }
   /* facts section end */
+
+  /* sponsors section start */
+  .sponsors-title,
+  .sponsors-description {
+    width: 100%;
+  }
+  .sponsors-images {
+    display: block;
+    text-align: center;
+    padding: 50px;
+    margin-top: 30px;
+  }
+  .sponsors-images img {
+    margin-bottom: 50px;
+  }
+  /* sponsors section end */
 }
 /* responsive end */
